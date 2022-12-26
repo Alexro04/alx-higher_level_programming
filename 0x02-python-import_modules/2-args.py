@@ -7,7 +7,6 @@ if __name__ == '__main__':
             print("1 argument:")
         else:
             print(f"{argc - 1} arguments:")
-        
         count = 1
         while count < argc:
             print(f"{count}: {sys.argv[count]}")
