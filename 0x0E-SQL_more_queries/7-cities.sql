@@ -1,11 +1,10 @@
 -- CREATES THE DATABASE hbtn_0d_usa
-DROP DATABASE IF EXISTS 'hbtn_0d_usa';
-CREATE DATABASE 'hbtn_0d_usa';
-
--- CREATES THE TABLE cities IN DATABASE
+-- creates database
+CREATE DATABASE IF NOT EXISTS 'hbtn_0d_usa';
+-- use database
 USE 'hbtn_0d_usa';
-DROP TABLE IF EXISTS 'cities';
-CREATE TABLE 'cities'(
+-- creates table
+CREATE TABLE IF NOT EXISTS 'cities'(
     id INT AUTO_INCREMENT PRIMARY KEY,
     state_id INT NOT NULL,
     FOREIGN KEY(state_id) REFERENCES states(id),
