@@ -1,16 +1,13 @@
 #!/usr/bin/node
-
-// getting the first argument 
-let number = parseInt(process.argv[2])
-
-// a function to calculate the factorial with recursion
-function factorial(num){
-    if (num == 1){
-        return num
+const number = parseInt(process.argv[2]);
+function factorial (num) {
+  if (!isNaN(num)) {
+    if (num === 1) {
+      return num;
     }
-
-    return num * factorial(num - 1)
+    return num * factorial(num - 1);
+  } else {
+    return 1;
+  }
 }
-
-// print result
-console.log(factorial(number))
+console.log(factorial(number));
