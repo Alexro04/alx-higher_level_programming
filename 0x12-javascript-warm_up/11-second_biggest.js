@@ -14,4 +14,5 @@ function biggest (Arr) {
   }
   return result;
 }
-console.log(biggest(newArr));
+finalAnswer = biggest(newArr);
+console.log(finalAnswer);
