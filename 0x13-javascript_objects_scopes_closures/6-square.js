@@ -7,10 +7,10 @@ class Square extends Square1 {
     for (i = 0; i < this.height; i++) {
       let allX = '';
       for (j = 0; j < this.width; j++) {
-        if (c === 'C') {
-          allX += 'C';
-        } else {
+        if (c === undefined) {
           allX += 'X';
+        } else {
+          allX += c;
         }
       }
       console.log(allX);
